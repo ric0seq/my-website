@@ -3,86 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricardo's Online Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Ricardo's Home</title>
+    <style>
+        /* Page-wide styles */
+        body {
+            background-color: #fbfaf7; /* Similar to Nabeel Hyatt's background */
+            color: #333; /* Clean and readable text */
+            font-family: 'Georgia', serif; /* Similar serif font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full-height view */
+            text-align: center; /* Center the text */
+            line-height: 1.8;
+        }
+
+        /* Section-specific styles */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 600px; /* Limit paragraph width */
+            margin: 0 auto;
+        }
+
+        nav {
+            margin-top: 2rem;
+        }
+
+        a {
+            color: #007acc; /* Nice, soft blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Main About Section -->
+    <div>
+        <h1>Hi, I’m Ricardo.</h1>
+        <p>
+            I’m a VC investor with a passion for building companies, writing essays, and exploring life. 
+            Welcome to my personal corner of the internet, where I share my investments, writings, and inspirations.
+        </p>
+
+        <!-- Navigation Links -->
         <nav>
-            <h1>Ricardo's Home</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#writing">Writing</a></li>
-                <li><a href="#life">Life</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="investments.html">Investments</a> | 
+            <a href="writing.html">Writing</a>
         </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <h2>Welcome to My World</h2>
-        <p>VC Investor | Writer | Life Explorer</p>
-        <a href="#about" class="btn">Learn More</a>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A brief intro about who I am and what I do...</p>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="company1-logo.png" alt="Company 1">
-                <p>Company 1 Description</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="company2-logo.png" alt="Company 2">
-                <p>Company 2 Description</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Writing Section -->
-    <section id="writing">
-        <h2>Writing & Essays</h2>
-        <ul>
-            <li><a href="essay1.html">Essay Title 1</a></li>
-            <li><a href="essay2.html">Essay Title 2</a></li>
-        </ul>
-    </section>
-
-    <!-- Life Section -->
-    <section id="life">
-        <h2>Life</h2>
-        <p>A glimpse into my personal world...</p>
-        <img src="gallery-photo1.jpg" alt="Life Photo">
-        <iframe src="https://open.spotify.com/embed/playlist/yourplaylistid"></iframe>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Ricardo's Home. All Rights Reserved.</p>
-    </footer>
+    </div>
 </body>
 </html>
-
