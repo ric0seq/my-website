@@ -23,7 +23,7 @@
         table {
             width: 100%;
             max-width: 1000px; /* Restrict table width */
-            margin: 0 auto; /* Center the table */
+            margin: 0; /* Remove auto-centering */
             border-collapse: collapse; /* Remove spacing between cells */
             background-color: #fbfaf7; /* Same as the background */
         }
@@ -47,151 +47,159 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .content {
+            max-width: 1000px; /* Keep the content width consistent */
+            margin: 0 auto; /* Center the content within the page */
+            text-align: left; /* Align all content to the left */
+        }
     </style>
 </head>
 <body>
-    <h1>My Investments</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Company Name</th>
-                <th>Industry</th>
-                <th>Location</th>
-                <th>Stage Invested</th>
-                <th>Lead Check</th>
-                <th>Current Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Stealth</td>
-                <td>AI Infrastructure</td>
-                <td>Sweden</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Seed</td>
-            </tr>
-            <tr>
-                <td>Stealth</td>
-                <td>Robotics / AI</td>
-                <td>Germany</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Seed</td>
-            </tr>
-            <tr>
-                <td>Stealth</td>
-                <td>Industrial SaaS</td>
-                <td>France</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Seed</td>
-            </tr>
-            <tr>
-                <td>Stealth</td>
-                <td>Industrial / Cyber</td>
-                <td>USA / Ireland</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Seed</td>
-            </tr>
-            <tr>
-                <td><a href="http://www.upciti.fr" target="_blank">Upciti</a></td>
-                <td>Smart City / AI</td>
-                <td>France</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Series A</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.sereact.ai" target="_blank">Sereact</a></td>
-                <td>Robotics / AI</td>
-                <td>Germany</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Series A</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.omnea.co" target="_blank">Omnea</a></td>
-                <td>Procurement</td>
-                <td>UK</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Series A</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.procuros.io" target="_blank">Procuros</a></td>
-                <td>Procurement / API</td>
-                <td>Germany</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Seed</td>
-            </tr>
-            <tr>
-                <td><a href="http://www.tryvital.io" target="_blank">Vital API</a></td>
-                <td>Healthcare / API</td>
-                <td>USA / UK</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Series A</td>
-            </tr>
-            <tr>
-                <td><a href="https://qlub.io" target="_blank">Qlub</a></td>
-                <td>Payments</td>
-                <td>MENA</td>
-                <td>Seed</td>
-                <td>No</td>
-                <td>Series B</td>
-            </tr>
-            <tr>
-                <td><a href="http://www.attio.com" target="_blank">Attio</a></td>
-                <td>CRM</td>
-                <td>USA / UK</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Series A</td>
-            </tr>
-            <tr>
-                <td><a href="http://www.vev.co" target="_blank">Vev</a></td>
-                <td>Soft POS</td>
-                <td>Netherlands</td>
-                <td>Pre-Seed</td>
-                <td>Yes</td>
-                <td>Seed</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.petsapp.com" target="_blank">Petsapp</a></td>
-                <td>Vertical SaaS</td>
-                <td>UK</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Series A</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.gravitysketch.com" target="_blank">Gravity Sketch</a></td>
-                <td>VR / 3D Design</td>
-                <td>UK</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Series A</td>
-            </tr>
-            <tr>
-                <td><a href="http://www.intenseye.com" target="_blank">Intenseye</a></td>
-                <td>Industrial / AI</td>
-                <td>USA / Turkey</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Series B</td>
-            </tr>
-            <tr>
-                <td><a href="http://www.pento.io" target="_blank">Pento</a></td>
-                <td>Fintech / SaaS</td>
-                <td>UK / Denmark</td>
-                <td>Seed</td>
-                <td>Yes</td>
-                <td>Sold to Hibob</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="content">
+        <h1>My Investments</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Industry</th>
+                    <th>Location</th>
+                    <th>Stage Invested</th>
+                    <th>Lead Check</th>
+                    <th>Current Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stealth</td>
+                    <td>AI Infrastructure</td>
+                    <td>Sweden</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Seed</td>
+                </tr>
+                <tr>
+                    <td>Stealth</td>
+                    <td>Robotics / AI</td>
+                    <td>Germany</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Seed</td>
+                </tr>
+                <tr>
+                    <td>Stealth</td>
+                    <td>Industrial SaaS</td>
+                    <td>France</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Seed</td>
+                </tr>
+                <tr>
+                    <td>Stealth</td>
+                    <td>Industrial / Cyber</td>
+                    <td>USA / Ireland</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Seed</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.upciti.fr" target="_blank">Upciti</a></td>
+                    <td>Smart City / AI</td>
+                    <td>France</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Series A</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.sereact.ai" target="_blank">Sereact</a></td>
+                    <td>Robotics / AI</td>
+                    <td>Germany</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Series A</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.omnea.co" target="_blank">Omnea</a></td>
+                    <td>Procurement</td>
+                    <td>UK</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Series A</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.procuros.io" target="_blank">Procuros</a></td>
+                    <td>Procurement / API</td>
+                    <td>Germany</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Seed</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.tryvital.io" target="_blank">Vital API</a></td>
+                    <td>Healthcare / API</td>
+                    <td>USA / UK</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Series A</td>
+                </tr>
+                <tr>
+                    <td><a href="https://qlub.io" target="_blank">Qlub</a></td>
+                    <td>Payments</td>
+                    <td>MENA</td>
+                    <td>Seed</td>
+                    <td>No</td>
+                    <td>Series B</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.attio.com" target="_blank">Attio</a></td>
+                    <td>CRM</td>
+                    <td>USA / UK</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Series A</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.vev.co" target="_blank">Vev</a></td>
+                    <td>Soft POS</td>
+                    <td>Netherlands</td>
+                    <td>Pre-Seed</td>
+                    <td>Yes</td>
+                    <td>Seed</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.petsapp.com" target="_blank">Petsapp</a></td>
+                    <td>Vertical SaaS</td>
+                    <td>UK</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Series A</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.gravitysketch.com" target="_blank">Gravity Sketch</a></td>
+                    <td>VR / 3D Design</td>
+                    <td>UK</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Series A</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.intenseye.com" target="_blank">Intenseye</a></td>
+                    <td>Industrial / AI</td>
+                    <td>USA / Turkey</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Series B</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.pento.io" target="_blank">Pento</a></td>
+                    <td>Fintech / SaaS</td>
+                    <td>UK / Denmark</td>
+                    <td>Seed</td>
+                    <td>Yes</td>
+                    <td>Sold to Hibob</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
