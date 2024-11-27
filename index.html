@@ -13,14 +13,18 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Align content to the top */
+            justify-content: flex-start; /* Align everything to the left */
+            align-items: flex-start; /* Align items to the top */
             min-height: 100vh;
         }
 
         .container {
             max-width: 800px; /* Limit width for readability */
-            margin: 50px; /* Add spacing around the content */
+            margin: 50px; /* Add spacing from the edges */
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            text-align: left; /* Align text to the left */
         }
 
         img {
@@ -28,7 +32,6 @@
             max-width: 120px; /* Smaller profile picture */
             height: auto; /* Maintain aspect ratio */
             margin-bottom: 20px; /* Space below the image */
-            display: block;
         }
 
         h1 {
@@ -70,4 +73,3 @@
     </div>
 </body>
 </html>
-
