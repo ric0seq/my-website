@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo's Home</title>
     <style>
-        /* Inline styles */
+        /* General styling */
         body {
-            background-color: #fbfaf7; /* Light beige background */
-            color: #333; /* Dark text */
-            font-family: 'Georgia', serif; /* Serif font for a clean, professional look */
+            background-color: #fbfaf7; /* Light beige */
+            color: #333;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Full-height view */
-            text-align: center; /* Center the text */
+            flex-direction: column; /* Stack content vertically */
+            min-height: 100vh;
+            text-align: center;
             line-height: 1.8;
+        }
+
+        img {
+            border-radius: 50%; /* Circular image */
+            max-width: 150px; /* Limit image size */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Space between image and text */
         }
 
         h1 {
@@ -27,7 +35,7 @@
 
         p {
             font-size: 1.2rem;
-            max-width: 600px; /* Limit paragraph width */
+            max-width: 600px;
             margin: 0 auto;
         }
 
@@ -36,7 +44,7 @@
         }
 
         a {
-            color: #007acc; /* Nice, soft blue */
+            color: #007acc; /* Soft blue */
             text-decoration: none;
             font-weight: bold;
         }
@@ -47,26 +55,23 @@
     </style>
 </head>
 <body>
-    <!-- Main About Section -->
+    <!-- Main Section -->
     <div>
+        <!-- Profile Image -->
+        <img src="6xQHbYq3_400x400.jpg" alt="Ricardo's photo">
+
+        <!-- About Text -->
+        <h1>Hi, I’m Ricardo.</h1>
+        <p>
+            I’m a VC investor with a passion for building companies, writing essays, and exploring life. 
+            Welcome to my personal corner of the internet, where I share my investments, writings, and inspirations.
+        </p>
+
         <!-- Navigation Links -->
         <nav>
             <a href="investments.html">Investments</a> | 
             <a href="writing.html">Writing</a>
         </nav>
-        <h1>Hi, I'm Ricardo.</h1>
-        <p>
-            I'm a GP at <a href="https://www.pointnine.com">Point Nine</a>.
-        </p>
-        <p>
-            My daily drive comes from being part of the journeys of the builders of tomorrow.
-        </p>
-        <p>
-            I make it my life's mission to go after the discovery of the truth and the defense of the new. Ideas are fragile and those who have them often times just need someone who believes.
-        </p>
-        <p>
-            In terms of investment thesis, I spend most of my time trying to learn and understand applications of AI across industries as well as how software is eating the physical world.
-        </p>
     </div>
 </body>
 </html>
