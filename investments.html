@@ -9,15 +9,19 @@
         body {
             background-color: #fbfaf7; /* Light beige background */
             color: #333; /* Dark text */
-            font-family: 'Times New Roman', serif; /* Matching font */
+            font-family: 'Times New Roman', serif; /* Match the font from index.html */
             margin: 0;
-            padding: 50px; /* Add padding around the content */
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column; /* Stack items vertically */
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 800px; /* Match the width of the index.html layout */
-            margin: 0 auto; /* Center container within the page */
-            text-align: left; /* Align all text to the left */
+            max-width: 800px; /* Match width from index.html */
+            margin: 50px; /* Consistent margin with index.html */
         }
 
         h1 {
@@ -27,7 +31,7 @@
 
         table {
             width: 100%;
-            border-collapse: collapse; /* Remove spacing between cells */
+            border-collapse: collapse; /* Remove spacing between table cells */
             background-color: #fbfaf7; /* Same as the background */
         }
 
@@ -43,7 +47,7 @@
         }
 
         a {
-            color: #007acc; /* Same blue as links on the About page */
+            color: #007acc; /* Same link color as index.html */
             text-decoration: none;
         }
 
