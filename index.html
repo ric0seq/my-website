@@ -8,24 +8,27 @@
         /* General styling */
         body {
             background-color: #fbfaf7; /* Light beige */
-            color: #333;
-            font-family: 'Georgia', serif;
+            color: #333; /* Darker text color */
+            font-family: 'Times New Roman', serif; /* Elegant serif font */
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Stack content vertically */
+            align-items: flex-start; /* Align content to the top */
             min-height: 100vh;
-            text-align: center;
-            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px; /* Limit width for readability */
+            margin: 50px; /* Add spacing around the content */
         }
 
         img {
             border-radius: 50%; /* Circular image */
-            max-width: 150px; /* Limit image size */
+            max-width: 120px; /* Smaller profile picture */
             height: auto; /* Maintain aspect ratio */
-            margin-bottom: 20px; /* Space between image and text */
+            margin-bottom: 20px; /* Space below the image */
+            display: block;
         }
 
         h1 {
@@ -35,18 +38,13 @@
 
         p {
             font-size: 1.2rem;
-            max-width: 600px; /* Limit width for better readability */
-            margin: 0 auto 1.5rem auto; /* Center and add spacing below */
-        }
-
-        nav {
-            margin-top: 2rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
         }
 
         a {
-            color: #007acc; /* Soft blue */
+            color: #007acc; /* Soft blue for links */
             text-decoration: none;
-            font-weight: bold;
         }
 
         a:hover {
@@ -55,12 +53,12 @@
     </style>
 </head>
 <body>
-    <!-- Main Section -->
-    <div>
+    <!-- Main Content -->
+    <div class="container">
         <!-- Profile Image -->
         <img src="6xQHbYq3_400x400.jpg" alt="Ricardo's photo">
 
-        <!-- About Text -->
+        <!-- About Section -->
         <h1>Hi, I’m Ricardo.</h1>
         <p>I invest in early stage startups as a partner at Point Nine.</p>
         <p>My daily drive comes from being part of the journeys of the builders of tomorrow.</p>
@@ -68,10 +66,8 @@
         <p>In terms of investment thesis, I spend most of my time trying to learn and understand applications of AI across industries as well as how software is eating the physical world.</p>
 
         <!-- Navigation Links -->
-        <nav>
-            <a href="investments.html">Investments</a> | 
-            <a href="writing.html">Writing</a>
-        </nav>
+        <p><a href="investments.html">Investments</a> | <a href="writing.html">Writing</a></p>
     </div>
 </body>
 </html>
+
