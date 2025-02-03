@@ -19,29 +19,38 @@
             text-align: left;
         }
 
-        .typewriter h1 {
-            display: inline-block;
-            overflow: hidden; /* Hides overflowing content */
-            white-space: nowrap; /* Prevents text wrapping */
-            border-right: 3px solid #333; /* Simulates a cursor */
+        h1 {
             font-size: 2.5rem;
-            animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+            margin-bottom: 1rem;
         }
 
-        @keyframes typing {
-            from { width: 0; } /* Start with no text */
-            to { width: 100%; } /* End with full text */
+        .post-list {
+            list-style-type: none;
+            padding: 0;
         }
 
-        @keyframes blink {
-            from, to { border-color: transparent; }
-            50% { border-color: #333; } /* Blinking cursor effect */
+        .post-list li {
+            margin-bottom: 15px;
+        }
+
+        .post-list a {
+            color: #007acc;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .post-list a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container typewriter">
+    <div class="container">
         <h1>Writings</h1>
+        <ul class="post-list">
+            <li><a href="my-first-post.html">My First Blog Post</a></li>
+            <!-- Add more posts here -->
+        </ul>
     </div>
 </body>
 </html>
